@@ -1,0 +1,9 @@
+{
+  // Tailwind CSS IntelliSense configuration
+  "css.customData": [],
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.accessibilitySupport": "off", // bruit de errors lens
+  "errorLens.messageEnabled": false // bruit de errors lens
+  
+}
