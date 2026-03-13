@@ -1,0 +1,64 @@
+/* src/components/layout/Header/ThemeToggle.css */
+
+.theme-toggle-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid #E0D4C3;
+  background-color: #F0E8DC;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 300ms ease, background-color 300ms ease, border-color 300ms ease
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  color: #8B6347;
+  transition: transform 500ms ease, opacity 400ms ease;
+}
+
+/* Light mode : Lune visible, Soleil caché */
+.theme-toggle-btn--light .theme-toggle-icon--moon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  transition-delay: 200ms;
+}
+
+.theme-toggle-btn--light .theme-toggle-icon--sun {
+  transform: rotate(-90deg) scale(0);
+  opacity: 0;
+  transition-delay: 0ms;
+}
+
+/* Dark mode : Lune cachée, Soleil visible */
+.theme-toggle-btn--dark .theme-toggle-icon--moon {
+  transform: rotate(360deg) scale(0);
+  opacity: 0;
+  transition-delay: 0ms;
+}
+
+.theme-toggle-btn--dark .theme-toggle-icon--sun {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  transition-delay: 200ms;
+}
+
+/* ── Dark mode — couleurs du bouton ── */
+/* ✅ Sélecteur direct sans :global */
+.dark .theme-toggle-btn {
+  border-color: #3D2E1E;
+  background-color: #2A1E12;
+}
+
+.dark .theme-toggle-icon {
+  color: #D4AF7A;
+}
