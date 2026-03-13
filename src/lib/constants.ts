@@ -8,7 +8,7 @@ export const SITE = {
   url: "https://lymera.fr",
   phone: "0767185745",          // ⚠️ À remplacer par le vrai numéro
   phoneDisplay: "07 67 18 57 45",
-  email: "",                       // à compléter si besoin
+  email: "Lymera34@gmail.com",                       // à compléter si besoin
   address: {
     street: "14 Rue de l'Autan",
     city: "Jacou",
@@ -21,7 +21,6 @@ export const SITE = {
     lng: 3.924,
   },
   planityUrl: "https://www.planity.com/lymera-34830-jacou",
-  rating: { score: 5, count: 39, platform: "Planity" },
 };
 
 export const HOURS = [

@@ -1,9 +1,9 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import { DM_Sans, Cormorant_Garamond } from "next/font/google";
+import MobileNav from "@/components/layout/MobileNav";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import StickyMobileCTA from "@/components/layout/StickyMobileCTA";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { jsonLdBeautySalon } from "@/lib/seo";
 import "./globals.css";
@@ -60,14 +60,14 @@ export default function RootLayout({
         />
       </head>
       <body className={`${dmSans.variable} ${cormorant.variable} font-sans antialiased min-h-screen flex flex-col`}>
-        <ThemeProvider>
-          <Header />
-          <main className="flex-1 pb-[72px] md:pb-0">
-            {children}
-          </main>
-          <Footer />
-          <StickyMobileCTA />
-        </ThemeProvider>
+          <ThemeProvider>
+            <Header />      {/* desktop lg+ */}
+            <MobileNav />   {/* mobile < lg */}
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </ThemeProvider>
       </body>
     </html>
   );

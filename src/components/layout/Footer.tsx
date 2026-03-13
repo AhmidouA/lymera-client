@@ -1,17 +1,20 @@
-// src/components/layout/Footer.tsx
 import Link from "next/link";
 import { MapPin, Phone, Clock, Star } from "lucide-react";
 import { SITE, HOURS, NAV_LINKS } from "@/lib/constants";
 
-export default function Footer() {
+import { getPlanityRating } from "@/lib/getPlanityRating";
+
+export default async function Footer() {
+    
+    const rating = await getPlanityRating();
   return (
     <footer className="bg-beige dark:bg-night-surface border-t border-border dark:border-night-border mt-auto">
-      <div className="max-w-[1200px] mx-auto px-6 py-16">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-6 md:px-2 xl:px-0 py-6">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* ── Col 1 : Logo + tagline ── */}
-          <div className="lg:col-span-1">
+          {/* ── Col info : Logo + tagline ── */}
+          <div className="col-span-2 lg:col-span-1">
             <Link href="/">
               <span className="font-serif text-2xl font-light tracking-[0.2em] text-dark dark:text-night-text">
                 LYMERA
@@ -23,30 +26,46 @@ export default function Footer() {
             <p className="font-sans text-sm text-muted dark:text-night-text2 mt-4 leading-relaxed">
               Institut d&apos;esthétique spécialisé en épilation laser, onglerie haute précision et drainage lymphatique à Jacou.
             </p>
-            {/* Badge Planity */}
-            <div className="mt-5 inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-cream dark:bg-night-bg border border-border dark:border-night-border">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={12} className="fill-brown text-brown dark:fill-night-accent dark:text-night-accent" />
-                ))}
-              </div>
+                <a
+                href={SITE.planityUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                    group mt-5 inline-flex items-center gap-2 
+                    px-3 py-2 rounded-xl 
+                    bg-cream dark:bg-night-bg 
+                    border border-border dark:border-night-border 
+                    hover:border-brown dark:hover:border-night-accent
+                    hover:scale-105 
+                    transition-all duration-200
+                "
+                >
+                <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={12} className="fill-brown text-brown dark:fill-night-accent dark:text-night-accent" />
+                    ))}
+                </div>
               <span className="font-sans text-xs text-muted dark:text-night-text2">
-                5/5 · {SITE.rating.count} avis Planity
+                {rating.score}/5 · {rating.count} avis Planity
               </span>
-            </div>
+            </a>
           </div>
 
-          {/* ── Col 2 : Liens rapides ── */}
-          <div>
-            <h4 className="font-sans text-xs font-500 tracking-widest uppercase text-brown dark:text-night-accent mb-5">
+          {/* ── Navigation ── */}
+          <div className="col-span-2 lg:col-span-1">
+            <h4 className="font-sans text-xs font-medium tracking-widest uppercase text-brown dark:text-night-accent mb-5
+              text-center sm:text-left">
               Navigation
             </h4>
-            <nav className="flex flex-col gap-3">
+            {/* < 640px : centré en grille 2 col | ≥ 640px : grille 3 col alignée gauche */}
+            <nav className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-sans text-sm text-muted dark:text-night-text2 hover:text-brown dark:hover:text-night-accent transition-colors duration-200"
+                  className="font-sans text-sm text-muted dark:text-night-text2
+                    hover:text-brown dark:hover:text-night-accent transition-colors duration-200
+                    text-center sm:text-left"
                 >
                   {link.label}
                 </Link>
@@ -54,9 +73,9 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* ── Col 3 : Horaires ── */}
-          <div>
-            <h4 className="font-sans text-xs font-500 tracking-widest uppercase text-brown dark:text-night-accent mb-5">
+          {/* ── Horaires ── */}
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1">
+            <h4 className="font-sans text-xs font-medium tracking-widest uppercase text-brown dark:text-night-accent mb-5">
               <Clock size={12} className="inline mr-2" />
               Horaires
             </h4>
@@ -74,29 +93,34 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── Col 4 : Contact ── */}
-          <div>
-            <h4 className="font-sans text-xs font-500 tracking-widest uppercase text-brown dark:text-night-accent mb-5">
+          {/* ── Contact ── */}
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1">
+            <h4 className="font-sans text-xs font-medium tracking-widest uppercase text-brown dark:text-night-accent mb-5">
               Contact
             </h4>
             <div className="flex flex-col gap-4">
-              <div className="flex gap-3">
-                <MapPin size={14} className="text-brown dark:text-night-accent shrink-0 mt-0.5" strokeWidth={1.5} />
-                <address className="font-sans text-sm text-muted dark:text-night-text2 not-italic leading-relaxed">
-                  {SITE.address.street}<br />
-                  {SITE.address.zip} {SITE.address.city}<br />
-                  <span className="text-xs text-gold dark:text-night-muted">À 10 min de Montpellier</span>
-                </address>
-              </div>
 
-              <div className="flex gap-3 items-center">
-                <Phone size={14} className="text-brown dark:text-night-accent shrink-0" strokeWidth={1.5} />
-                <a
-                  href={`tel:${SITE.phone}`}
-                  className="font-sans text-sm text-muted dark:text-night-text2 hover:text-brown dark:hover:text-night-accent transition-colors duration-200"
-                >
-                  {SITE.phoneDisplay}
-                </a>
+              {/* Adresse + téléphone sur la même ligne */}
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex gap-3">
+                  <MapPin size={14} className="text-brown dark:text-night-accent shrink-0 mt-0.5" strokeWidth={1.5} />
+                  <address className="font-sans text-sm text-muted dark:text-night-text2 not-italic leading-relaxed">
+                    {SITE.address.street}<br />
+                    {SITE.address.zip} {SITE.address.city}<br />
+                    <span className="text-xs text-gold dark:text-night-muted">À 10 min de Montpellier</span>
+                  </address>
+                </div>
+
+                {/* Téléphone à droite de l'adresse */}
+                <div className="flex gap-2 items-center shrink-0">
+                  <Phone size={14} className="text-brown dark:text-night-accent" strokeWidth={1.5} />
+                 <a 
+                    href={`tel:${SITE.phone}`}
+                    className="font-sans text-sm text-muted dark:text-night-text2 hover:text-brown dark:hover:text-night-accent transition-colors duration-200"
+                  >
+                    {SITE.phoneDisplay}
+                  </a>
+                </div>
               </div>
 
               <a
@@ -104,14 +128,14 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  inline-flex items-center justify-center gap-2
-                  mt-2 py-3 rounded-full
-                  bg-brown text-white dark:bg-night-accent dark:text-night-bg
-                  font-sans text-xs font-medium tracking-wide
-                  hover:opacity-90 transition-all duration-200
+                    inline-flex items-center justify-center gap-2
+                    mt-2 py-3 rounded-full
+                    bg-brown text-white dark:bg-night-accent dark:text-night-bg
+                    font-sans text-xs font-medium tracking-wide
+                    hover:opacity-90 transition-all duration-200
                 "
               >
-                Réserver en ligne
+                Prendre RDV
               </a>
             </div>
           </div>
