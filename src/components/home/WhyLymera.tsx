@@ -38,7 +38,7 @@ export default function WhyLymera() {
             </div>
           </div>
 
-          {/* ── Image — sous le texte sur mobile, à gauche sur lg ── */}
+          {/* ── Image — sous le texte sur mobile, à gauche sur lg ──  className="object-cover object-[15%_center]"*/}
           <div className="w-full order-2 lg:order-1 relative mt-0 md:mt-10
             bg-cream dark:bg-night-bg
             border border-border dark:border-night-border
@@ -47,7 +47,7 @@ export default function WhyLymera() {
               src="/images/hero/laser-machine.webp"
               alt="Machine épilation laser Lascera — Technologie V2 Corpoderm Institut Lymera Jacou"
               fill
-              className="object-cover object-[15%_center]"
+              className="object-cover object-right"
             />
           </div>
 
