@@ -4,7 +4,7 @@ import { SITE } from "@/lib/constants";
 
 export default function HeroOnglerie() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-24 bg-beige dark:bg-night-surface transition-colors duration-300">
+    <section className="relative overflow-hidden py-20 lg:py-24 bg-cream dark:bg-night-bg transition-colors duration-300">
 
       {/* Image blur fond */}
       <div className="absolute inset-0 z-0">

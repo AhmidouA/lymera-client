@@ -26,7 +26,7 @@ export default function TarifsOnglerie() {
           <div className="flex-1 h-px bg-border dark:bg-night-border" />
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-2 gap-3 lg:px-4 xl:px-0">
           {tarifsOnglerie.map((t) => (
             <div key={t.name}
               className="flex items-center justify-between

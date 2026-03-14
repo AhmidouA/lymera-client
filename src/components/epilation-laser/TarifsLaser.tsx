@@ -81,7 +81,7 @@ export default function TarifsLaser() {
         {tab === "femme" && (
           <div>
             <SectionDivider label="Zones par zone" />
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4 lg:px-4 xl:px-0">
               {tarifsZonesFemme.map((t) => <TarifRow key={t.name} {...t} />)}
             </div>
             <SectionDivider label="Forfaits combinés" />

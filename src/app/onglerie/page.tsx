@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Onglerie Haute Précision — Lymera Jacou",
     description: "Onglerie haute précision par Farah à Jacou. Pose gel, semi-permanent, remplissage.",
-    images: ["/og/onglerie.jpg"],
+    images: ["/og/onglerie.webp"],
     locale: "fr_FR",
     type: "website",
   },

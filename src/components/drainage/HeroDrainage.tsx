@@ -2,21 +2,20 @@ import Image from "next/image";
 import { Calendar } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
-export default function HeroLaser() {
+export default function HeroDrainage() {
   return (
     <section className="relative overflow-hidden py-20 lg:py-24 bg-cream dark:bg-night-bg transition-colors duration-300">
-      {/* ── Image de fond avec blur ── */}
+
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/epilation-laser/laser-machine.webp"
-          alt="Salon Lymera — Institut d'esthétique Jacou"
+          src="/images/drainage/hero.webp"
+          alt="Drainage lymphatique — Institut Lymera Jacou"
           fill
-          className="object-cover object-bottom blur-[8px] scale-105 brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
+          className="object-cover object-center blur-[8px] scale-105 brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
           priority
-        />   
+        />
       </div>
 
-      {/* ── Contenu au dessus ── */}
       <div className="relative z-10 max-w-container mx-auto px-6 lg:px-0 flex flex-col items-center text-center">
 
         <div className="flex items-center gap-3 mb-8">
@@ -29,26 +28,26 @@ export default function HeroLaser() {
 
         <h1 className="font-serif font-light text-dark dark:text-night-text leading-[1.1] mb-6
           text-[2.2rem] sm:text-[3rem] lg:text-[4rem] max-w-[800px]">
-          Épilation Laser Définitive à Jacou —{" "}
-          <em className="italic text-brown dark:text-night-accent">Technologie V2 Corpoderm</em>
+          Drainage Lymphatique à Jacou —{" "}
+          <em className="italic text-brown dark:text-night-accent">Stimulez votre circulation</em>
         </h1>
 
-        <p className="font-sans text-muted dark:text-night-text2 text-base leading-relaxed mb-10 max-w-[560px]">
-          Résultats durables, protocole personnalisé et bilan offert. À deux pas de Montpellier, pour les femmes et les hommes.
+        <p className="font-sans text-muted dark:text-night-text2 text-base leading-relaxed mb-10 max-w-[520px]">
+          Soin doux qui stimule la circulation, élimine les toxines et apporte une sensation de légèreté. Résultats visibles dès la première séance.
         </p>
 
-        <div className="flex items-center gap-4 flex-wrap justify-center mb-12 ">
+        <div className="flex items-center gap-4 flex-wrap justify-center mb-12">
           <a href={SITE.planityUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
             <Calendar size={16} strokeWidth={1.5} />
             Prendre RDV
           </a>
-          <a href="#tarifs" className="btn-outline">
-            Voir les tarifs
+          <a href="#tarif" className="btn-outline">
+            Voir le tarif
           </a>
         </div>
 
-        <div className="flex flex-wrap gap-3 justify-center font-bold">
-          {["Bilan offert", "Femmes & Hommes", "Technologie V2 Corpoderm", "Résultats durables"].map((badge) => (
+        <div className="flex flex-wrap gap-3 justify-center">
+          {["Résultats dès la 1ère séance", "Soin doux & relaxant", "Par Nassima"].map((badge) => (
             <div key={badge}
               className="inline-flex items-center gap-2 px-3 py-2 rounded-xl
                 bg-beige/80 dark:bg-night-surface/80 backdrop-blur-sm
