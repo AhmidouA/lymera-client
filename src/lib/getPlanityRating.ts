@@ -1,4 +1,3 @@
-// src/lib/getPlanityRating.ts
 export async function getPlanityRating() {
   try {
     const res = await fetch("https://www.planity.com/lymera-34830-jacou", {

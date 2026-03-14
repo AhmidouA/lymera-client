@@ -6,9 +6,9 @@ export const SITE = {
   description:
     "Institut Lymera à Jacou (34830) — Épilation laser définitive V2 Corpoderm, onglerie haute précision, drainage lymphatique. Note 5/5 sur 39 avis Planity.",
   url: "https://lymera.fr",
-  phone: "0767185745",          // ⚠️ À remplacer par le vrai numéro
+  phone: "0767185745",
   phoneDisplay: "07 67 18 57 45",
-  email: "Lymera34@gmail.com",                       // à compléter si besoin
+  email: "Lymera34@gmail.com",
   address: {
     street: "14 Rue de l'Autan",
     city: "Jacou",
@@ -70,11 +70,22 @@ export const SERVICES = [
 ];
 
 export const WHY_LYMERA = [
-  { label: "Protocole personnalisé" },
-  { label: "Technologie V2 Corpoderm dernière génération" },
-  { label: "Bilan laser offert" },
-  { label: "Équipe certifiée" },
-  { label: "Femmes ET Hommes" },
+  {
+    title: "Protocole personnalisé",
+    desc: "Bilan offert avant chaque traitement laser. Adapté à votre carnation et pilosité.",
+  },
+  {
+    title: "Technologie V2 Corpoderm",
+    desc: "Dernière génération — résultats durables, confort maximal.",
+  },
+  {
+    title: "Équipe certifiée",
+    desc: "Farah & Nassima — esthéticiennes diplômées et passionnées.",
+  },
+  {
+    title: "Femmes & Hommes",
+    desc: "Tous profils accueillis, tous phototypes traités.",
+  },
 ];
 
 export const TEAM = [
@@ -82,33 +93,12 @@ export const TEAM = [
     name: "Farah Arras",
     role: "Fondatrice & Esthéticienne",
     bio: "Spécialiste en épilation laser, Farah a fondé Lymera avec la conviction que chaque client mérite un accompagnement sur-mesure et des résultats durables.",
-    image: "/images/farah.jpg",    // à remplacer par la vraie photo
+    image: "/images/farah.jpg",
   },
   {
     name: "Nassima",
     role: "Prothésiste Ongulaire & Esthéticienne",
     bio: "Experte en onglerie, Nassima crée des ongles qui allient technicité et élégance naturelle, adaptés à chaque morphologie.",
-    image: "/images/nassima.jpg",  // à remplacer
-  },
-];
-
-export const REVIEWS = [
-  {
-    author: "Marie T.",
-    platform: "Google",
-    rating: 5,
-    text: "Super expérience ! Farah est très professionnelle et douce. J'ai vu des résultats dès la 3e séance. Je recommande vivement.",
-  },
-  {
-    author: "Inès B.",
-    platform: "Planity",
-    rating: 5,
-    text: "Salon magnifique, ambiance zen. Nassima est une artiste pour les ongles. On se sent vraiment chouchoutée.",
-  },
-  {
-    author: "Laura M.",
-    platform: "Google",
-    rating: 5,
-    text: "Excellente prestataire, très à l'écoute. Le bilan laser offert m'a vraiment aidée à comprendre le protocole. Merci Farah !",
+    image: "/images/nassima.jpg",
   },
 ];

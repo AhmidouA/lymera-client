@@ -69,7 +69,7 @@ export default function Header() {
                 font-sans text-xs tracking-wide
                 text-muted dark:text-night-text2
                 hover:text-brown dark:hover:text-night-accent
-                transition-colors duration-200
+                transition-colors duration-200 font-semibold
               "
             >
               {SITE.phoneDisplay}
