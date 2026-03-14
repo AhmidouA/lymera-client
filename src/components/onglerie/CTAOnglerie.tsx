@@ -1,14 +1,14 @@
 import { Calendar } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
-export default function CTALaser() {
+export default function CTAOnglerie() {
   return (
     <section className="py-14 px-6 bg-brown dark:bg-night-surface flex flex-col items-center text-center gap-4 transition-colors duration-300">
       <p className="font-sans text-xs font-medium tracking-[0.25em] uppercase text-white/50">
-        Prête à commencer ?
+        Envie de beaux ongles ?
       </p>
       <h2 className="font-serif font-light text-white text-2xl sm:text-3xl lg:text-4xl leading-snug">
-        Réservez votre bilan laser offert
+        Réservez votre séance onglerie
       </h2>
       <p className="font-sans text-sm text-white/60 max-w-[360px] leading-relaxed">
         Prenez rendez-vous en quelques clics sur Planity, 24h/24.
