@@ -22,7 +22,7 @@ export default function TarifsPage() {
   return (
     <>
       <HeroTarifs />
-      <div className="h-px bg-border dark:bg-night-border" />
+      {/* <div className="h-px bg-border dark:bg-night-border" /> */}
       <TabsTarifs />
       <div className="h-px bg-border dark:bg-night-border" />
       <CTATarifs />

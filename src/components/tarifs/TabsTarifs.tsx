@@ -61,7 +61,7 @@ export default function TabsTarifs() {
   const [activeTab, setActiveTab] = useState<Tab>("femme");
 
   return (
-    <section className="bg-cream dark:bg-night-bg transition-colors duration-300">
+    <section className="bg-cream dark:bg-night-bg transition-colors duration-300 ">
 
       {/* Tabs sticky   bg-cream/95 dark:bg-night-bg/95  border-b border-border dark:border-night-border*/}
       <div className="sticky top-[72px] z-40   
@@ -90,7 +90,7 @@ export default function TabsTarifs() {
       </div>
 
       {/* Contenu */}
-      <div className="max-w-container mx-auto px-6 lg:px-0 py-12">
+      <div className="max-w-container mx-auto px-6 py-12 lg:px-4 xl:px-0">
 
         {/* FEMME */}
         {activeTab === "femme" && (
@@ -101,7 +101,7 @@ export default function TabsTarifs() {
               {tarifsZonesFemme.map((t) => <TarifRow key={t.name} {...t} />)}
             </div>
             <SectionDivider label="Forfaits combinés" />
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 ">
               {forfaitsFemme.map((t) => <TarifRow key={t.name} {...t} />)}
             </div>
           </div>

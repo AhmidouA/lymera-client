@@ -4,14 +4,14 @@ import { SITE } from "@/lib/constants";
 
 export default function HeroTarifs() {
   return (
-    <section className="relative py-20 lg:py-24 bg-cream dark:bg-night-bg transition-colors duration-300">
+    <section className="relative  py-20 lg:py-24 bg-cream dark:bg-night-bg transition-colors duration-300">
 
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero/hero.webp"
           alt="Institut Lymera — Tarifs épilation laser, onglerie et drainage Jacou"
           fill
-          className="object-cover object-center blur-[8px] scale-[1.2] brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
+          className="object-cover object-center blur-[8px] scale-y-125 brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
           priority
         />
       </div>

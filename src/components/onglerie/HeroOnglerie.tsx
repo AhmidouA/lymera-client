@@ -12,7 +12,7 @@ export default function HeroOnglerie() {
           src="/images/onglerie/hero.webp"
           alt="Onglerie haute précision — Prothésiste ongulaire Farah Institut Lymera Jacou"
           fill
-          className="object-cover object-center blur-[8px] scale-[1.009] brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
+          className="object-cover object-center blur-[8px] scale-y-125 brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
           priority
         />
       </div>

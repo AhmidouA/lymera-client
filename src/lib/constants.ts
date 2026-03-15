@@ -92,13 +92,15 @@ export const TEAM = [
   {
     name: "Farah Arras",
     role: "Fondatrice & Esthéticienne",
-    bio: "Spécialiste en épilation laser, Farah a fondé Lymera avec la conviction que chaque client mérite un accompagnement sur-mesure et des résultats durables.",
+    bio: "Fondatrice de Lymera, Farah est spécialiste en épilation laser V2 Corpoderm et en onglerie haute précision. Elle accompagne chaque cliente avec un protocole sur-mesure pour des résultats durables.",
     image: "/images/farah.jpg",
+    expertises: ["Épilation Laser", "Technologie V2 Corpoderm", "Bilan personnalisé", "Onglerie"],
   },
   {
     name: "Nassima",
     role: "Prothésiste Ongulaire & Esthéticienne",
-    bio: "Experte en onglerie, Nassima crée des ongles qui allient technicité et élégance naturelle, adaptés à chaque morphologie.",
+    bio: "Nassima est experte en épilation laser et drainage lymphatique. Polyvalente et passionnée, elle accompagne chaque cliente avec douceur et précision.",
     image: "/images/nassima.jpg",
+    expertises: ["Épilation Laser", "Technologie V2 Corpoderm", "Drainage Lymphatique", "Poses sur Ongles naturels"],
   },
 ];
