@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone, Clock, Star } from "lucide-react";
+import { MapPin, Phone, Clock, Star, Instagram } from "lucide-react";
 import { SITE, HOURS, NAV_LINKS } from "@/lib/constants";
 
 import { getPlanityRating } from "@/lib/getPlanityRating";
@@ -49,7 +49,26 @@ export default async function Footer() {
                 {rating.score}/5 · {rating.count} avis Planity
               </span>
             </a>
+             {/* Instagram */}
+<div className="mt-4 pt-4 border-t border-border dark:border-night-border">
+  <p className="font-sans text-xs tracking-[0.15em] uppercase text-muted dark:text-night-text2 mb-3">
+    Suivez-nous
+  </p>
+  <a
+    href="https://www.instagram.com/lymera.beautystudio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2
+      text-muted dark:text-night-text2
+      hover:text-brown dark:hover:text-night-accent
+      transition-colors duration-200"
+  >
+    <Instagram size={16} strokeWidth={1.5} />
+    <span className="font-sans text-sm">@lymera.beautystudio</span>
+  </a>
+</div>
           </div>
+         
 
           {/* ── Navigation ── */}
           <div className="col-span-2 lg:col-span-1">
