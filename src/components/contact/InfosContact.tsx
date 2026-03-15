@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Calendar } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Calendar, Instagram } from "lucide-react";
 import { SITE, HOURS } from "@/lib/constants";
 
 export default function InfosContact() {
@@ -65,6 +65,34 @@ export default function InfosContact() {
                     {SITE.phoneDisplay}
                   </a>
                 </div>
+              </div>
+            </div>
+            {/* Instagram */}
+            <div className="flex gap-4">
+              <div
+                className="w-10 h-10 rounded-xl shrink-0
+    bg-beige dark:bg-night-surface
+    border border-border dark:border-night-border
+    flex items-center justify-center"
+              >
+                <Instagram
+                  size={16}
+                  className="text-brown dark:text-night-accent"
+                  strokeWidth={1.5}
+                />
+              </div>
+              <div>
+                <p className="font-sans text-xs tracking-[0.15em] uppercase text-gold dark:text-night-muted mb-2">
+                  Instagram
+                </p>
+                <a
+                  href="https://www.instagram.com/lymera.beautystudio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm font-medium text-brown dark:text-night-accent hover:opacity-80 transition-opacity duration-200"
+                >
+                  @lymera.beautystudio
+                </a>
               </div>
             </div>
 
