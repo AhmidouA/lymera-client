@@ -4,7 +4,7 @@ import { SITE } from "@/lib/constants";
 
 export default function HeroOnglerie() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-24 bg-cream dark:bg-night-bg transition-colors duration-300">
+    <section className="relative py-20 lg:py-24 bg-cream dark:bg-night-bg transition-colors duration-300">
 
       {/* Image blur fond */}
       <div className="absolute inset-0 z-0">
@@ -12,7 +12,7 @@ export default function HeroOnglerie() {
           src="/images/onglerie/hero.webp"
           alt="Onglerie haute précision — Prothésiste ongulaire Farah Institut Lymera Jacou"
           fill
-          className="object-cover object-center blur-[8px] scale-105 brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
+          className="object-cover object-center blur-[8px] scale-[1.009] brightness-110 opacity-55 dark:opacity-80 dark:brightness-50"
           priority
         />
       </div>
