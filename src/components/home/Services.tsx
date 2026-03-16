@@ -49,7 +49,7 @@ export default function Services() {
                     border border-border dark:border-night-border
                     rounded-2xl p-8 lg:p-10
                     transition-all duration-300
-                    hover:-translate-y-1 hover:shadow-card-hover"
+                    hover:-translate-y-1 hover:shadow-card-hover dark:hover:shadow-card-hover-dark"
                 >
                     <div className="w-12 h-12 rounded-xl bg-cream dark:bg-night-bg
                         border border-border dark:border-night-border

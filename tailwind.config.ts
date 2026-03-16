@@ -65,6 +65,10 @@ const config: Config = {
       boxShadow: {
         "card":  "0 4px 24px rgba(44, 26, 14, 0.07)",
         "card-hover": "0 8px 40px rgba(44, 26, 14, 0.13)",
+
+        /* dark mode */
+        "card-dark":  "0 4px 24px rgba(10, 6, 2, 0.6)",
+        "card-hover-dark":  "0 8px 40px rgba(107, 76, 53, 0.4)",
       },
       transitionDuration: {
         DEFAULT: "300ms",
