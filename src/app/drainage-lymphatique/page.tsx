@@ -10,7 +10,7 @@ import CTADrainage from "@/components/drainage/CTADrainage";
 
 export const metadata = buildMetadata({
   title: "Drainage Lymphatique à Jacou & Montpellier",
-  description: "Institut Lymera — Drainage lymphatique à Jacou (34830). Soin doux, résultats visibles dès la première séance. Réservez en ligne sur Planity.",
+  description: "Institut Lymera — Drainage lymphatique à Jacou (34830). Massage tonique, résultats visibles dès la première séance. Réservez en ligne sur Planity.",
   path: "/drainage-lymphatique",
   image: "/og/drainage.webp",
   keywords: ["drainage lymphatique Jacou", "drainage lymphatique Montpellier", "massage lymphatique Jacou"],

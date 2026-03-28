@@ -5,7 +5,7 @@ const tarifs = [
   { name: "Jambes complètes", duration: "30 min · Laser femme", price: "150€" },
   { name: "Forfait AX + Maillot + DJ", duration: "1h · Laser femme", price: "140€" },
   { name: "Pose complète mains", duration: "2h · Onglerie", price: "50€" },
-  { name: "Drainage lymphatique", duration: "2h · Soin corps", price: "90€" },
+  { name: "Drainage lymphatique", duration: "1H30 · Soin corps", price: "90€" },
   { name: "Dos entier", duration: "30 min · Laser homme", price: "130€" },
 ];
 

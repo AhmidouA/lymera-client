@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const bienfaits = [
   "Stimule la circulation lymphatique",
-  "Élimine les toxines et l'excès de liquides",
-  "Réduit les sensations de jambes lourdes",
-  "Sensation de légèreté dès la première séance",
-  "Favorise la relaxation profonde",
+  "Favorise l’élimination des toxines",
+  "Réduit les gonflements et la rétention d’eau",
+  "Soulage les jambes lourdes et congestionnées",
+  "Procure une sensation de légèreté et de bien-être",
 ];
 
 export default function DescriptionDrainage() {
@@ -38,7 +38,7 @@ export default function DescriptionDrainage() {
             </h2>
             <div className="w-12 h-px bg-gold mb-6" />
             <p className="font-sans text-sm text-muted dark:text-night-text2 leading-relaxed mb-8">
-              Le drainage lymphatique est une technique de massage doux qui stimule la circulation lymphatique, favorise l&apos;élimination des toxines et réduit les sensations de jambes lourdes. Une séance de 2 heures pour un effet légèreté immédiat.
+              Un massage tonique qui stimule la circulation de la lymphe, favorise l’élimination des toxines et aide le corps à retrouver légèreté et bien-être.
             </p>
             <div className="flex flex-col gap-3">
               {bienfaits.map((b) => (

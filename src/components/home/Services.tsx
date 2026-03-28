@@ -5,19 +5,19 @@ const services = [
   {
     icon: Zap,
     title: "Épilation Laser Définitive",
-    description: "Technologie V2 Corpoderm dernière génération. Bilan offert. Protocole personnalisé femme & homme.",
+    description: "Nouvelle technologie efficace sur tous les types de peaux, avec des résultats visibles dès la première séance. Diagnostic offert & flash test gratuit.",
     href: "/epilation-laser",
   },
   {
     icon: Sparkles,
     title: "Onglerie Haute Précision",
-    description: "Ongles façonnés selon votre morphologie. Pose gel, semi-permanent, remplissage. Par Nassima.",
+    description: "6 ans d’expérience et formatrice en onglerie, avec des techniques adaptées à chaque nature d’ongle. Baby-boomer et french réalisés avec maîtrise.",
     href: "/onglerie",
   },
   {
     icon: Waves,
     title: "Drainage Lymphatique",
-    description: "Soin doux qui stimule la circulation, élimine les toxines. Sensation de légèreté dès la 1ère séance.",
+    description: "Un massage tonique qui stimule la lymphe, favorise l’élimination des toxines et améliore la circulation.",
     href: "/drainage-lymphatique",
   },
 ];

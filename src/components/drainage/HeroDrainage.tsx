@@ -32,7 +32,7 @@ export default function HeroDrainage() {
         </h1>
 
         <p className="font-sans text-muted dark:text-night-text2 text-base leading-relaxed mb-10 max-w-[520px]">
-          Soin doux qui stimule la circulation, élimine les toxines et apporte une sensation de légèreté. Résultats visibles dès la première séance.
+          Un massage tonique qui stimule la lymphe, favorise l’élimination des toxines et améliore la circulation.
         </p>
 
         <div className="flex items-center gap-4 flex-wrap justify-center mb-12">

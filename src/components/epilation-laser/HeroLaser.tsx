@@ -48,7 +48,7 @@ export default function HeroLaser() {
         </div>
 
         <div className="flex flex-wrap gap-3 justify-center font-bold">
-          {["Bilan offert", "Femmes & Hommes", "Technologie V2 Corpoderm", "Résultats durables"].map((badge) => (
+          {["Bilan & flash test offerts", "Femmes & Hommes", "Machine dernière génération", "Résultats dès la 1er séance"].map((badge) => (
             <div key={badge}
               className="inline-flex items-center gap-2 px-3 py-2 rounded-xl
                 bg-beige/80 dark:bg-night-surface/80 backdrop-blur-sm

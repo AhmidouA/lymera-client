@@ -65,8 +65,8 @@ export const forfaitsHomme: TarifItem[] = [
 export const tarifsOnglerie: TarifItem[] = [
   { name: "Formule pose complète mains et pieds", duration: "3h", price: "70 €" },
   { name: "Pose complète mains (ongles sains, déco basique)", duration: "2h", price: "50 €" },
-  { name: "Remplissage (d'une pose faite par Nassima)", duration: "2h", price: "45 €" },
   { name: "Formule semi/gel sur ongles naturels mains et pieds", duration: "2h", price: "60 €" },
+  { name: "Remplissage (d'une pose faite par Nassima)", duration: "2h", price: "45 €" },
   { name: "Gel sur ongles naturels", duration: "1h30", price: "40 €" },
   { name: "Pose pied avec reconstruction", duration: "1h", price: "40 €" },
   { name: "Semi pieds", duration: "1h", price: "30 €" },
@@ -74,5 +74,5 @@ export const tarifsOnglerie: TarifItem[] = [
 ];
 
 export const tarifDrainage: TarifItem[] = [
-  { name: "Drainage lymphatique", duration: "2h · Bilan + contre-indications inclus", price: "90 €" },
+  { name: "Drainage lymphatique", duration: "1h30 · Bilan + contre-indications inclus", price: "90 €" },
 ];

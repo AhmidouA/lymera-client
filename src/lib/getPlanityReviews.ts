@@ -10,9 +10,9 @@ export async function getPlanityReviews(): Promise<PlanityReview[]> {
     // 🚧 DEV MODE — retourne le fallback directement 
     // (Eviter de ton envoyer de requet en scrapping (Pour els avis planity) en mode Dev et  
     // on mode production pas de souci car c'est juste en mode dev)
-    if (process.env.NODE_ENV === "development") {
-        return FALLBACK_REVIEWS;
-    }
+    // if (process.env.NODE_ENV === "development") {
+     //   return FALLBACK_REVIEWS;
+    // } 
 
   try {
     const url = new URL("https://app.scrapingbee.com/api/v1/");

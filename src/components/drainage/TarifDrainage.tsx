@@ -32,7 +32,7 @@ export default function TarifDrainage() {
             Drainage Lymphatique
           </h3>
           <p className="font-sans text-xs text-muted dark:text-night-text2 mb-8">
-            Séance complète · 2 heures
+            Séance complète · 1H30 heures
           </p>
 
           <div className="font-serif font-light text-brown dark:text-night-accent text-7xl leading-none mb-2">

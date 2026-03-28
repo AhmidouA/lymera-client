@@ -9,7 +9,7 @@ import CTAOnglerie from "@/components/onglerie/CTAOnglerie";
 
 export const metadata = buildMetadata({
   title: "Onglerie Haute Précision à Jacou & Montpellier",
-  description: "Institut Lymera — Onglerie haute précision par Nassima à Jacou (34830). Pose gel, semi-permanent, remplissage. Réservez en ligne sur Planity.",
+  description: "Institut Lymera — Onglerie haute précision par Farah à Jacou (34830). Pose gel, semi-permanent, remplissage. Réservez en ligne sur Planity.",
   path: "/onglerie",
   image: "/og/onglerie.webp",
   keywords: ["onglerie Jacou", "prothésiste ongulaire Montpellier", "pose gel Jacou"],
@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
 export default function OngleriePage() {
   const jsonLd = getServiceJsonLd({
     name: "Onglerie Haute Précision",
-    description: "Onglerie haute précision par Nassima à Jacou. Pose gel, semi-permanent, remplissage.",
+    description: "Onglerie haute précision par Farah à Jacou. Pose gel, semi-permanent, remplissage.",
     url: "https://lymera.fr/onglerie",
     image: "https://lymera.fr/og/onglerie.jpg",
   });

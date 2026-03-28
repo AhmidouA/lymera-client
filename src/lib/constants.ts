@@ -55,7 +55,7 @@ export const SERVICES = [
     slug: "onglerie",
     title: "Onglerie Haute Précision",
     shortDesc:
-      "Prothésie ongulaire par Nassima. Ongles façonnés selon votre morphologie, élégants et naturels.",
+      "Prothésie ongulaire par Farah. Ongles façonnés selon votre morphologie, élégants et naturels.",
     icon: "◇",
     href: "/onglerie",
   },
@@ -63,7 +63,7 @@ export const SERVICES = [
     slug: "drainage-lymphatique",
     title: "Drainage Lymphatique",
     shortDesc:
-      "Soin doux qui stimule la circulation, élimine les toxines. Résultats visibles dès la première séance.",
+      "Un massage tonique qui stimule la lymphe, favorise l’élimination des toxines et améliore la circulation.",
     icon: "◯",
     href: "/drainage-lymphatique",
   },
@@ -91,15 +91,15 @@ export const WHY_LYMERA = [
 export const TEAM = [
   {
     name: "Farah Arras",
-    role: "Fondatrice & Esthéticienne",
-    bio: "Fondatrice de Lymera, Farah est spécialiste en épilation laser V2 Corpoderm et en onglerie haute précision. Elle accompagne chaque cliente avec un protocole sur-mesure pour des résultats durables.",
+    role: "Fondatrice Lymera",
+    bio: "Avec 6 ans d’expérience dans l’univers de la beauté, une expertise en onglerie et une spécialisation en épilation laser définitive, chaque protocole est pensé sur mesure selon les besoins de la cliente.",
     image: "/images/farah.jpg",
     expertises: ["Épilation Laser", "Technologie V2 Corpoderm", "Bilan personnalisé", "Onglerie"],
   },
   {
     name: "Nassima",
-    role: "Prothésiste Ongulaire & Esthéticienne",
-    bio: "Nassima est experte en épilation laser et drainage lymphatique. Polyvalente et passionnée, elle accompagne chaque cliente avec douceur et précision.",
+    role: "Co-fondatrice",
+    bio: "Spécialiste du laser et du drainage lymphatique, elle travaille selon un protocole précis stimulant les points ganglionnaires pour relancer efficacement la circulation lymphatique.",
     image: "/images/nassima.jpg",
     expertises: ["Épilation Laser", "Technologie V2 Corpoderm", "Drainage Lymphatique", "Poses sur Ongles naturels"],
   },
